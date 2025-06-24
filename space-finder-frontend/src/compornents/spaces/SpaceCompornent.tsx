@@ -1,5 +1,5 @@
-import genericImage from "../../assets/generic-photo.jpg";
-import { SpaceEntry } from "../model/model";
+import genericImage from "../../assets/generic-photo.png";
+import type { SpaceEntry } from "../model/model";
 import './SpaceComponent.css';
 
 interface SpaceComponentProps extends SpaceEntry {

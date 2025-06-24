@@ -4,7 +4,6 @@ type NavBarProps = {
   userName: string | undefined;
 };
 export default function NavBar({ userName }: NavBarProps) {
-
   function renderLoginLogout() {
     if (userName) {
       return (

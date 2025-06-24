@@ -1,4 +1,4 @@
-import { SyntheticEvent, useState } from "react";
+import { type SyntheticEvent, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { DataService } from "../../services/DataService";
 

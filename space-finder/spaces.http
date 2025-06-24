@@ -1,30 +1,27 @@
-@url = https://avzd0sy2h0.execute-api.eu-west-1.amazonaws.com/prod/
-@token = eyJraWQiOiJkdk5rSGtndThBVzl2a2tWbU50WjRJTFNmNHBzK3J3eXFrVjZSY2tWZDFBPSIsImFsZyI6IlJTMjU2In0.eyJvcmlnaW5fanRpIjoiMmY0MjcxNzktZWIxMS00ZDRkLTk1YzMtYjgwNjlkMjNkOTUxIiwic3ViIjoiZDY3MTgzMDUtMzNmNy00ZTM0LTkwMDEtZDk1NmU2YjY3MWE5IiwiYXVkIjoiNWExbzh0OTI0aHJ0NTZ0a3QzYmwxMDJtYm8iLCJldmVudF9pZCI6ImNiOTU1ODU0LTc2MmEtNGFkOS1iMzY3LTRlYzY4MDJlYTM4NyIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjgyNTEzMDQ0LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9kenJ0alNyS3giLCJjb2duaXRvOnVzZXJuYW1lIjoiYmFyb3NhbnUiLCJleHAiOjE2ODI1MTY2NDQsImlhdCI6MTY4MjUxMzA0NCwianRpIjoiZDY2NjVlM2QtNGYxMC00ZTFhLWE4ZjQtYjg4MTZmZGE4NDRkIn0.MC-n5EKmu8cwfg7auoQArlpNJBTvJnvv-p0Cv3Sc-P0qeK67O-fMqMron4XaVFJpEY-57RG1W4gscp4j9TdDxiwHs-Wam85Tx7uVpuq6jNlr3qC10HKSB0jIO9Qc1_65yCwMlMib7wd22P9oCcfO7Ve-q8hlfyR0neN46vB5RhdeFwPUMy6gjzC25PuxFm9jGVlYhNbwOuAE2t_OWdT9DgniQxh4At62MJGs3t3H0cfyOfJE4nBI4wfW3wQcGiaNgMIE0r2QmDB6M8_p06yEgQrvdWDGLHllf66zvoZWowF0ApdBF7Pxo3-t72z9D9kmgC5OD3GoAHVwIz6Ly6LTPg
+@url =  https://g0elkgv82g.execute-api.ap-northeast-1.amazonaws.com/prod/
+@token = eyJraWQiOiJDaCtxNTRcL1lpNEJGblVVZlwvMTBUZ1pRMkRVQ2FEQzYxWWlaUVRQakpFaTA9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIzN2Q0OGEwOC00MGIxLTcwNWMtZGJmNi0zMzA1MjBkMGQ5ODIiLCJjb2duaXRvOmdyb3VwcyI6WyJBZG1pbnMiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb21cL2FwLW5vcnRoZWFzdC0xX2tJd2pmcnZDciIsImNvZ25pdG86dXNlcm5hbWUiOiJiYXJvc2FudSIsIm9yaWdpbl9qdGkiOiJmMmQ0MjljNC03ODhjLTQ3YzAtOThkMy0zYjdiODE5NWVlZjAiLCJjb2duaXRvOnJvbGVzIjpbImFybjphd3M6aWFtOjozODE0OTIxNDAyMzg6cm9sZVwvQXV0aFN0YWNrLUNvZ25pdG9BZG1pblJvbGU0QzEwRkJBNC1mY3NZc3ZtdnJ4b3AiXSwiYXVkIjoiM2w5c3BkMThhYzNwa3F0bzlodmhjM2c0NmMiLCJldmVudF9pZCI6IjQ4NGJlMGE5LWI0YjEtNGY3Mi05YzhhLTU0ZGYxOWQ4NmE1MCIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzUwNzIzOTc4LCJleHAiOjE3NTA3Mjc1NzgsImlhdCI6MTc1MDcyMzk3OCwianRpIjoiMmE0NTFlOWQtODU0Zi00YzlmLTljZmMtYjk0NDNjNzExMDhjIiwiZW1haWwiOiJzYXRvMTk3MkBqdHAuY28uanAifQ.dxkSg-jC0W9UiBkPNSza66kurdOYHS4wvkLNTmMbRUEDNJkRvz_xLSMuPJmzYk0t2RnBvBdrD4qJlvjUAQntf8SH-Lx-ftAa8Rw6Yo9YY7g4_OFcjoLBdrBe054diSkRZI-JqSTyOqpKvPKulF9IPsCGx3bb8NZuOC3OVgTVwNcnv6mVD15aY6fAMwYcpq-4u76TMpdE0dXLu7_Fcn_vvWAwwnGhm-9NPj-OhdWC81TZNmwU-JDsbPOJhPQym9Dyj_TAdAWRUcl_UUcEaURFN9xFREzmLgEysPa2a0qnj1B2Q0apAeOFrQSgfY5KEQxuVm1Z5lVCFbu8ydV8hsQ01Q
 
 GET {{url}}/spaces
 Authorization: {{token}}
 ###
-
-POST https://1ertg407z7.execute-api.eu-west-1.amazonaws.com/prod/spaces
+POST https://g0elkgv82g.execute-api.ap-northeast-1.amazonaws.com/prod/spaces
 content-type: application/json
 
- {
-    "location": "Dublin",
-    "name": "Best location"
- }
+{
+    "location": "Tokyo",
+    "name": "location"
+}
 ###
+GET https://g0elkgv82g.execute-api.ap-northeast-1.amazonaws.com/prod/spaces?id=ceb3e458-cd71-4ffa-8e34-4f864f5bdac5
 
-GET https://1ertg407z7.execute-api.eu-west-1.amazonaws.com/prod/spaces?id=fbe76aea-5aff-434e-85f6-e8f5fc1647ec
 ###
-
 DELETE {{url}}/spaces
 Authorization: {{token}}
 ###
 
-PUT https://1ertg407z7.execute-api.eu-west-1.amazonaws.com/prod/spaces?id=fbe76aea-5aff-434e-85f6-e8f5fc1647ec
+PUT https://g0elkgv82g.execute-api.ap-northeast-1.amazonaws.com/prod/spaces?id=ceb3e458-cd71-4ffa-8e34-4f864f5bdac5
 content-type: application/json
 
- {
-    "name": "Best location 5"
- }
-###
+{
+    "name": "location 2"
+}

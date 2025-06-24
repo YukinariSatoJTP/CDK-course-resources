@@ -1,41 +1,46 @@
 {
   "name": "space-finder",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test-services": "jest --config jest.services.config.ts",
+   "test-services": "jest --config jest.services.config.ts",
     "test-infra": "jest --config jest.infra.config.ts",
     "test": "npm run test-services && npm run test-infra",
-    "deploy": "cdk deploy --all --outputs-file outputs.json --require-approval never"
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "synth": "npm run build && cdk synth",
+    "deploy": "cdk deploy --all --outputs-file outputs.json",
+    "destroy": "npm run build && cdk destroy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {   
-    "@types/aws-lambda": "^8.10.145",
-    "@types/node": "^22.7.4",
-    "aws-cdk": "^2.161.1",
-    "aws-cdk-lib": "^2.161.1",
-    "constructs": "^10.3.0",
-    "esbuild": "^0.24.0",
+  "description": "",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.149",
+    "@types/node": "^24.0.1",
+    "aws-cdk": "^2.1018.1",
+    "aws-cdk-lib": "^2.200.2",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.25.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.2"
+    "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@aws-amplify/auth": "^6.5.1",
-    "@aws-sdk/client-cognito-identity": "^3.665.0",
-    "@aws-sdk/client-dynamodb": "^3.665.0",
-    "@aws-sdk/client-s3": "^3.665.0",
-    "@aws-sdk/credential-providers": "^3.665.0",
-    "@aws-sdk/lib-dynamodb": "^3.665.0",
-    "@aws-sdk/util-dynamodb": "^3.665.0",
-    "@types/jest": "^29.5.13",
+    "-": "^0.0.1",
+    "@aws-amplify/auth": "^6.13.1",
+    "@aws-sdk/client-cognito-identity": "^3.830.0",
+    "@aws-sdk/client-dynamodb": "^3.828.0",
+    "@aws-sdk/client-s3": "^3.828.0",
+    "@aws-sdk/credential-providers": "^3.830.0",
+    "@aws-sdk/lib-dynamodb": "^3.830.0",
+    "@aws-sdk/util-dynamodb": "^3.830.0",
+    "@types/jest": "^30.0.0",
     "@types/uuid": "^10.0.0",
-    "aws-amplify": "^6.6.4",
-    "aws-xray-sdk-core": "^3.10.1",
-    "jest": "^29.7.0",
-    "ts-jest": "^29.2.5",
-    "uuid": "^10.0.0"
+    "aws-amplify": "^6.15.1",
+    "aws-xray-sdk-core": "^3.10.3",
+    "jest": "^30.0.2",
+    "ts-jest": "^29.4.0",
+    "uuid": "^11.1.0"
   }
 }

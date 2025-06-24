@@ -1,12 +1,12 @@
-import './App.css'
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import { useState } from 'react';
-import LoginComponent from './components/LoginComponent';
-import { AuthService } from './services/AuthService';
-import { DataService } from './services/DataService';
-import CreateSpace from './components/spaces/CreateSpace';
-import Spaces from './components/spaces/Spaces';
+import "./App.css";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { useState } from "react";
+import NavBar from "./compornents/NavBar";
+import LoginComponent from "./compornents/LoginCompornent";
+import { AuthService } from "./services/AuthService";
+import { DataService } from "./services/DataService";
+import CreateSpace from "./compornents/spaces/CreateSpace";
+import Spaces from "./compornents/spaces/Spaces";
 
 const authService = new AuthService();
 const dataService = new DataService(authService);
@@ -18,11 +18,11 @@ function App() {
     {
       element: (
         <>
-          <NavBar userName={userName}/>
+          <NavBar userName={userName} />
           <Outlet />
         </>
       ),
-      children:[
+      children: [
         {
           path: "/",
           element: <div>Hello world!</div>,
@@ -37,13 +37,13 @@ function App() {
         },
         {
           path: "/createSpace",
-          element: <CreateSpace dataService={dataService}/>,
+          element: <CreateSpace dataService={dataService} />,
         },
         {
           path: "/spaces",
-          element: <Spaces dataService={dataService}/>,
+          element: <Spaces dataService={dataService} />,
         },
-      ]
+      ],
     },
   ]);
 
@@ -51,7 +51,7 @@ function App() {
     <div className="wrapper">
       <RouterProvider router={router} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

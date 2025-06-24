@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import SpaceComponent from "./SpaceComponent";
 import { DataService } from "../../services/DataService";
 import { NavLink } from "react-router-dom";
-import { SpaceEntry } from "../model/model";
+import type { SpaceEntry } from "../model/model";
+import SpaceComponent from "./SpaceCompornent";
 
 interface SpacesProps {
     dataService: DataService
