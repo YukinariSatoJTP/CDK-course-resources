@@ -22,8 +22,10 @@ export class CdkCicdStack extends cdk.Stack {
         primaryOutputDirectory: "cdk-cicd/cdk.out",
       }),
     });
-    const testStage = pipeline.addStage(new PipelineStage(this, "PipelineTestStage", {
-      stageName: "Test",
-    }));
+    const testStage = pipeline.addStage(
+      new PipelineStage(this, "PipelineTestStage", {
+        stageName: "Test",
+      })
+    );
   }
 }
