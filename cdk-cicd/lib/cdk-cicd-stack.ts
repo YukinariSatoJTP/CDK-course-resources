@@ -9,9 +9,13 @@ export class CdkCicdStack extends cdk.Stack {
     new CodePipeline(this, 'AwesomePipeline', {
       pipelineName: "AwesomePipeline",
       synth: new ShellStep('synth', {
-        input: CodePipelineSource.gitHub('YukinariSatoJTP/CDK-course-resources', {
-
-        })
+        input: CodePipelineSource.gitHub('YukinariSatoJTP/CDK-course-resources', 'cicd-practice'),
+        commands: [
+          'cd cdk-cicd',
+          'npm ci',
+          'npx cdk synth'
+        ],
+        primaryOutputDirectory: 'cdk-cicd/cdk.out',
       })
     })
   }
